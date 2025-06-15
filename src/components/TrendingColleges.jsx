@@ -1,18 +1,64 @@
 import CollegeCard from "./CollegeCard";
+import harvard from "../assets/images/harvard.jpg"
+import standford from "../assets/images/standford.jpg"
+import nanyang from "../assets/images/nanyang.jpg"
 
 export default function TrendingColleges() {
     return (
-        <section className="mt-20 w-[90%] mx-auto">
-            <h1>
-                <span>Trending</span>
-                <span>colleges</span>
-            </h1>
-            <div className="grid grid-cols-3 gap-5">
-                {[1, 2, 3].map(n => <CollegeCard key={n} />)}
-            </div>
-            <div>
-                <button>Load more...</button>
-            </div>
-        </section>
+             <section className="w-[90%] mx-auto mt-20 bg-[#f8f8fa] py-6 px-5">
+    
+      <h1 className="mb-8 text-3xl font-bold">
+        <span className="text-black">Trending</span>{" "}
+        <span className="text-[#7748f2]">colleges</span>
+      </h1>
+
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* {[1, 2, 3].map(n => <CollegeCard key={n} />)} */}
+
+      
+        <CollegeCard
+          image={harvard}
+          name="Harvard University"
+          location="Cambridge, Massachusetts, UK"
+        />
+
+        
+        <CollegeCard
+          image={standford}
+          name="Stanford University"
+          location="Stanford, California"
+        />
+
+       
+        <CollegeCard
+          image={nanyang}
+          name="Nanyang University"
+          location="Nanyang Ave, Singapura"
+        />
+      </div>
+
+      
+      <div className="mt-10 flex justify-center">
+        <button className="bg-[#7848f4] rounded-md px-7 py-3 text-white">Load more...</button>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     );
 }

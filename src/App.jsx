@@ -7,6 +7,7 @@ import ViewCollege from "./pages/ViewCollege"
 import CreateEvent from "./pages/CreateEvent"
 import NotFound from "./pages/NotFound"
 
+
 const eventHiveRouter = createBrowserRouter([
   { path: '/', element: <Home /> },
   { path: '/register', element: <Register /> },

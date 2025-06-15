@@ -2,6 +2,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import HeroWithFilter from "../components/HeroWithFilter";
 import UpcomingEvents from "../components/UpcomingEvents";
+import MakeEvent from "../components/MakeEvent";
+import Brands from "../components/Brands";
 import TrendingColleges from "../components/TrendingColleges";
 import OurBlogs from "../components/OurBlogs";
 
@@ -11,8 +13,8 @@ export default function Home() {
             <Navbar />
             <HeroWithFilter />
             <UpcomingEvents />
-            {/* Make your own event section goes here */}
-            {/* Join these brands section goes here */}
+            <MakeEvent />
+            <Brands />
             <TrendingColleges />
             <OurBlogs />
             <Footer />
