@@ -5,7 +5,7 @@ import nanyang from "../assets/images/nanyang.jpg"
 
 export default function TrendingColleges() {
     return (
-             <section className="w-[90%] mx-auto mt-20 bg-[#f8f8fa] py-6 px-5">
+             <section className="w-[90%] mx-auto mt-30 bg-[#f8f8fa] py-6 px-5">
     
       <h1 className="mb-8 text-3xl font-bold">
         <span className="text-black">Trending</span>{" "}
