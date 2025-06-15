@@ -7,6 +7,7 @@ export default function ViewEvent() {
     return (
         <>
             <Navbar />
+            
             <EventDetail />
             <SimilarEvents />
             <Footer />
