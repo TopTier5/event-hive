@@ -69,7 +69,7 @@ export default function EventDetail() {
                          Jaksaran event</span>
                         </h3>   
                     </div>
-                    <div className="border mt-5 w-50 h-20">
+                    <div className="border border-none mt-5 w-50 h-20">
                         <h1 className="font-bold">Share with friends</h1>
                         <div className="border border-none w-50 h-9 mt-3 flex items-center"> <span className=" bg-[#0572e6] rounded-md"><Facebook size={24} color="#FFFFFF" /></span> <span className="bg-[#1265bf] ml-5 rounded-md"><Linkedin size={24} color="#FFFFFF" /></span></div>
                     </div>
