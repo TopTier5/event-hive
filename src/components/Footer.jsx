@@ -46,7 +46,7 @@ export default function Footer() {
                 </div>
 
                 <p className="text-xs text-gray-300 mt-2 lg:mt-0">
-                    &copy;2025 Uploaded by EventHive. All rights reserved.
+                    Non Copyrighted &copy; 2023 Upload by EventHive.
                 </p>
             </div>
         </footer>
