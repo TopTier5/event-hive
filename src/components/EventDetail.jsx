@@ -23,7 +23,14 @@ export default function EventDetail() {
                     <h3 className="flex items-center mt-6"> <MapPin className="mr-2" size={20} />View map</h3>
                 </div>
                     <div className="absolute top-10  right-25 border border-none rounded-md mt-35 w-75 h-75 bg-white ">
-                        
+                        <h1 className="text-black text-heading pl-6 font-bold pt-6">Date & Time </h1>
+                        <p className="text-gray-600 pl-6 pt-4">Saturdat, March 18 2023, 9.30PM</p>
+                        <p className="text-primary pl-6 pt-4">Add to calendar</p>
+                        <button className="ml-5 mt-4 bg-primary border border-none h-10 rounded-md
+                        text-sm text-white w-65">Book now</button>
+                         <button className="ml-5 mt-4 bg-gray-400 border border-none h-10 rounded-md
+                        text-sm text-white w-65">Program Promoter</button>
+                        <p className="text gray-600 text-center mt-2 text-sm">No Refunds</p>
                         </div>
             </section>
             
@@ -62,7 +69,7 @@ export default function EventDetail() {
                          Jaksaran event</span>
                         </h3>   
                     </div>
-                    <div className="border mt-5 w-50 h-20">
+                    <div className="border border-none mt-5 w-50 h-20">
                         <h1 className="font-bold">Share with friends</h1>
                         <div className="border border-none w-50 h-9 mt-3 flex items-center"> <span className=" bg-[#0572e6] rounded-md"><Facebook size={24} color="#FFFFFF" /></span> <span className="bg-[#1265bf] ml-5 rounded-md"><Linkedin size={24} color="#FFFFFF" /></span></div>
                     </div>
