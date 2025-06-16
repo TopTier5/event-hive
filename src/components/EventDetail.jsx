@@ -7,10 +7,10 @@ import { Twitter } from "lucide-react";
 export default function EventDetail() {
     return (
         <>
-            <section className="bg-[url(./assets/images/viewevent.jpg)] h-[595px] bg-cover w-[95%] mx-auto relative ">
+            <section className="bg-[url(./assets/images/viewevent.jpg)] h-[595px] bg-cover w-[95%] mx-auto relative p-10 ">
                 <div className="absolute inset-0 bg-gradient-to-r from-[rgba(19,19,21,0.5)] to-[rgba(19,19,21,0.5)]">
                 </div>
-                <div>
+                <div className="relative z-10 max-w-md">
                     <button className="bg-[#7848F4] relative z-10 text-white ml-16 border border-none rounded-md w-16 h-9 mt-10">Back</button>
                 </div>
                 <div className="relative z-10 text-white w-[584.54px] top-[70px] left-[60px]">
@@ -22,8 +22,11 @@ export default function EventDetail() {
                     </p>
                     <h3 className="flex items-center mt-6"> <MapPin className="mr-2" size={20} />View map</h3>
                 </div>
-                <div className="border h-20p w-[385px] p-4"></div>
+                    <div className="absolute top-10  right-25 border border-none rounded-md mt-35 w-75 h-75 bg-white ">
+                        
+                        </div>
             </section>
+            
             <section className="flex justify-between items-start p-10">
                 <div className="flex-1 mr-10">
                 <h1 className="ml-25 mt-10 text-heading">Description</h1>
