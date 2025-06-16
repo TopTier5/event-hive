@@ -2,7 +2,7 @@ import EventCard from "./EventCard";
 
 export default function UpcomingEvents() {
     return (
-        <section className="mt-20 w-[90%] mx-auto bg-[#f8f8fa]">
+        <section className="mt-30 w-[90%] mx-auto bg-[#f8f8fa]">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 py-6">
                 <h2 className="text-2xl font-bold ml-7">
                     Upcoming

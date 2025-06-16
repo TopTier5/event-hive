@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import banner from "../assets/images/banner.png";
 
 
@@ -24,7 +25,11 @@ export default function MakeEvent () {
             Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit.
           </p>
           <button className="bg-[#7848f4] text-white text-sm px-10 py-3 rounded-md shadow-md">
+            <Link to="/create-event">
             Create Events
+
+          </Link>
+            
           </button>
         </div>
       </div>
