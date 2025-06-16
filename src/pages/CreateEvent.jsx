@@ -60,7 +60,7 @@ export default function CreateEvent() {
                     <h2 className="mt-5">Event Description</h2>
                     <input type="text" name="text" id="text" placeholder="Type here..." className="border border-none bg-white h-40 rounded-md" />
 
-                    <button className="bg-[#7848F4] mt-3 h-10 text-white text-body-text">Create Event</button>
+                    <button className="bg-[#7848F4] mt-3 h-10 text-white text-body-text cursor-pointer">Create Event</button>
                      </div>
                 </div>
             </section >

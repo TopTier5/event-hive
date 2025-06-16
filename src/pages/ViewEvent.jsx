@@ -6,8 +6,7 @@ import SimilarEvents from "../components/SimilarEvents";
 export default function ViewEvent() {
     return (
         <>
-            <Navbar />
-            
+             <Navbar />
             <EventDetail />
             <SimilarEvents />
             <Footer />
