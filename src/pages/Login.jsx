@@ -3,7 +3,7 @@ import google from "../assets/images/google-icon.png";
 
 export default function Login() {
     return (
-        <div className="bg-gray-200 min-h-screen">
+        <div className="bg-gray-200 h-screen">
             {/* <div className="container mx-auto"> */}
                 <div className="flex flex-row w-full bg-gray-100 rounded-md mx-auto overflow-x-hidden">
                     <div className="w-1/2 py-16 px-12">
