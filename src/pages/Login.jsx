@@ -5,7 +5,7 @@ export default function Login() {
     return (
         <div className="bg-gray-200 h-screen">
             {/* <div className="container mx-auto"> */}
-                <div className="flex flex-row w-full bg-gray-100 rounded-md mx-auto overflow-x-hidden">
+                <div className="flex flex-row w-full bg-gray-100 rounded-md mx-auto overflow-hidden">
                     <div className="w-1/2 py-16 px-12">
                         <p className="text-center text-2xl font-bold">Event <span className="text-[#005DB5]">Hive</span></p>
                         <h2 className="text-center text-4xl font-bold mt-12 mb-10 ml-10">Sign In to Event Hive</h2>
