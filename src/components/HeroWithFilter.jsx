@@ -3,8 +3,8 @@ import { Search } from "lucide-react";
 export default function HeroWithFilter() {
     return (
         <section className="bg-[url('./assets/images/hero.png')] bg-cover bg-center bg-no-repeat min-h-[596px] w-[95%] mx-auto relative rounded-md bg-[#f8f8fa]">
-  <h1 className="text-big-heading text-white w-full sm:w-[80%] md:w-[60%] lg:w-[40%] mx-auto text-center pt-24 px-4">
-    MADE FOR THOSE WHO DO
+  <h1 className="text-big-heading font-bold text-white w-full sm:w-[80%] md:w-[60%] lg:w-[40%] mx-auto text-center pt-24 px-4">
+    MADE FOR THOSE <br /> WHO DO
   </h1>
 
   <form className="bg-navy-blue w-[90%] mx-auto py-6 px-4 sm:px-6 md:px-10 flex flex-col lg:flex-row justify-between gap-6 lg:gap-4 rounded-md absolute -bottom-20 left-1/2 transform -translate-x-1/2">
