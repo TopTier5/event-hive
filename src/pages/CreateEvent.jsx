@@ -4,11 +4,10 @@ export default function CreateEvent() {
     return (
         <>
             <Navbar />
-            <section className="bg-[#F8F8FA] py-10">
+            <section className="bg-[#F8F8FA] py-10 w-full">
+             <form className="flex flex-col items-center  px-4 sm:px-6 md:px-10">
                 <div>
                     <h1 className="font-bold text-big-heading text-center ">Create Event</h1>
-                        <div className="flex flex-col items-center">
-
                     <div className="ml-4 sm:ml-6 md:ml-12 lg:ml-38 mt-10 space-y-6 flex flex-col w-1/2">
                         <div>
                             <label htmlFor="Event Title">Event Title
@@ -54,21 +53,21 @@ export default function CreateEvent() {
                 </div>
 
                 <div>
-                                            <div className="flex flex-col items-center">
-
+                     <div className="flex flex-col items-center p-4">
                     <h1 className="font-bold text-big-heading text-center mt-20 ">Event Description</h1>
-                    <div className="ml-4 sm:ml-6 md:ml-12 lg:ml-38 mt-10 space-y-6 flex flex-col w-1/2">
+                    <div className="flex flex-col space-y-6 w-full max-w-md mx-auto mt-10 p-4">
                    <h1>Event Image</h1>
                     <input type="file" name="image" id="image" accept="image/*"  className="border border-none h-60 rounded-md bg-[#ECECEC]" />
                    
                     <h2 className="mt-5">Event Description</h2>
-                    <input type="text" name="text" id="text" placeholder="Type here..." className="border border-none bg-white h-40 rounded-md" />
+                    <input type="text" name="text" id="text" placeholder="Type here..." className="border border-none bg-white h-40 rounded-md w-full p-3" />
 
-                    <button className="bg-[#7848F4] mt-3 h-10 text-white text-body-text cursor-pointer">Create Event</button>
+                    <button className="bg-[#7848F4] mt-3 h-10 text-white text-body-text cursor-pointer w-full">Create Event</button>
                      </div>
                 </div>
                     </div>
-                </div>
+                </form>
+            
             </section >
         </>
     );

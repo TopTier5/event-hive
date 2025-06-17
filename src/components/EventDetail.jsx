@@ -5,76 +5,137 @@ import { Linkedin } from "lucide-react";
 import { Twitter } from "lucide-react";
 
 export default function EventDetail() {
-    return (
-        <>
-            <section className="bg-[url(./assets/images/viewevent.jpg)] h-[595px] bg-cover w-[95%] mx-auto relative p-10 ">
-                <div className="absolute inset-0 bg-gradient-to-r from-[rgba(19,19,21,0.5)] to-[rgba(19,19,21,0.5)]">
-                </div>
-                <div className="relative z-10 max-w-md">
-                    <button className="bg-[#7848F4] relative z-10 text-white ml-16 border border-none rounded-md w-16 h-9 mt-10">Back</button>
-                </div>
-                <div className="relative z-10 text-white w-[584.54px] top-[70px] left-[60px]">
-                    <h1 className="text-5xl font-bold h-full  ">
-                        Dream world wide <br />in Jakartra
-                    </h1>
-                    <h2 className="mt-10 text-big-heading">IIIT Sonepat</h2>
-                    <p className="text-body-text mt-8">DesignHub organized a 3D Modeling Workshop using Blender on 16th February at 5 PM. The workshop taught participants the magic of creating stunning 3D models and animations using Blender. It was suitable for both beginners and experienced users. The event was followed by a blender-render competition, which added to the excitement.
-                    </p>
-                    <h3 className="flex items-center mt-6"> <MapPin className="mr-2" size={20} />View map</h3>
-                </div>
-                    <div className="absolute top-10  right-25 border border-none rounded-md mt-35 w-75 h-75 bg-white ">
-                        <h1 className="text-black text-heading pl-6 font-bold pt-6">Date & Time </h1>
-                        <p className="text-gray-600 pl-6 pt-4">Saturdat, March 18 2023, 9.30PM</p>
-                        <p className="text-primary pl-6 pt-4">Add to calendar</p>
-                        <button className="ml-5 mt-4 bg-primary border border-none h-10 rounded-md
-                        text-sm text-white w-65">Book now</button>
-                         <button className="ml-5 mt-4 bg-gray-400 border border-none h-10 rounded-md
-                        text-sm text-white w-65">Program Promoter</button>
-                        <p className="text gray-600 text-center mt-2 text-sm">No Refunds</p>
-                        </div>
-            </section>
-            
-            <section className="flex justify-between items-start p-10">
-                <div className="flex-1 mr-10">
-                <h1 className="ml-25 mt-10 text-heading">Description</h1>
-                <div className=" mt-4 pb-0 ml-25 border border-none w-145 h-65 ">
-                    <p className="text-gray-600">DesignHub organized a 3D Modeling Workshop using Blender on 16th February at 5 PM. The workshop taught participants the magic of creating stunning 3D models and animations using Blender. It was suitable for both beginners and experienced users. The event was followed by a blender-render competition, which added to the excitement. <br /> <br />
+  return (
+    <>
+      <section className="bg-[url(./assets/images/viewevent.jpg)] bg-cover w-full relative p-10">
+        {/* linear gradient */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[rgba(19,19,21,0.5)] to-[rgba(19,19,21,0.5)]" />
+        <div className="relative z-10 max-w-7xl mx-auto p-4 flex flex-col lg:flex-row lg:justify-between lg:items-start">
+          <div className="text-white max-w-xl mb-10 lg:mb-0">
+            <button className="bg-[#7848F4] text-white px-4 py-2 rounded-md mt-10">
+              Back
+            </button>
+            {/* page description */}
+            <h1 className="text-4xl sm:text-5xl font-bold mt-20">
+              Dream world wide <br /> in Jakartra
+            </h1>
+            <h2 className="mt-10 text-2xl sm:text-3xl font-semibold">
+              IIIT Sonepat
+            </h2>
+            <p className="mt-8 text-base sm:text-lg">
+              DesignHub organized a 3D Modeling Workshop using Blender on 16th February at 5 PM. The workshop taught participants the magic of creating stunning 3D models and animations using Blender. It was suitable for both beginners and experienced users. The event was followed by a blender-render competition, which added to the excitement.      </p>
+            <h3 className="flex items-center mt-6">
+              <MapPin className="mr-2" size={20} /> View map
+            </h3>
+          </div>
+          {/* side border */}
+          <div className="p-6 bg-white rounded-md shadow-md w-full max-w-xs lg:max-w-none lg:w-1/3">
+            <h1 className="text-black font-bold mb-4">
+              Date & Time
+            </h1>
+            <p className="text-gray-600 mb-4">
+              Saturday, March 18 2023, 9.30PM
+            </p>
+            <p className="text-[#7848F4] mb-4">
+              Add to calendar
+            </p>
+            <button className="w-full py-2 mb-4 bg-[#7848F4] text-gray-100 font-semibold rounded-md">
+              Book now
+            </button>
+            <button className="w-full py-2 mb-4 bg-gray-400 text-gray-100 font-semibold rounded-md">
+              Program Promoter
+            </button>
+            <p className="text-gray-600 text-center text-sm">
+              No Refunds
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col lg:flex-row p-6 lg:p-10 gap-10">
+        <div className="flex-1">
+          <h1 className="text-2xl font-semibold mt-6 lg:mt-10 mb-4">
+            Description
+          </h1>
+          <div className="mb-6">
+            <p className="text-gray-600">
+              DesignHub organized a 3D Modeling Workshop using Blender on 16th February at 5 PM. The workshop taught participants the magic of creating stunning 3D models and animations using Blender. It was suitable for both beginners and experienced users. The event was followed by a blender-render competition, which added to the excitement.<br /><br />
+              DesignHub organized a 3D Modeling Workshop using Blender on 16th February at 5 PM. The workshop taught participants the magic of creating stunning 3D models and animations using Blender. It was suitable for both beginners and experienced users. The event was followed by a blender-render competition, which added to the excitement.
+            </p>
+          </div>
+          <div className="mb-6">
+            <h1 className="text-2xl font-semibold mb-2">
+              Hours
+            </h1>
+            <p className="text-gray-600">
+              Weekdays hour <span className="text-[#7848F4] font-bold ml-2">7PM-10PM</span>
+            </p>
+            <p className="text-gray-600">
+              Sunday hour <span className="text-[#7848F4] font-bold ml-2">7PM-10PM</span>
+            </p>
+          </div>
+          <div className="mb-6">
+            <h1 className="text-2xl font-semibold mb-2">
+              Organizer Contact
+            </h1>
+            <p className="text-gray-600">
+              Please go to <span className="text-[#7848F4] font-semibold">www.sneakypeeks.com</span> and refer the FAQ section for more details.
+            </p>
+          </div>
+        </div>
 
-                        DesignHub organized a 3D Modeling Workshop using Blender on 16th February at 5 PM. The workshop taught participants the magic of creating stunning 3D models and animations using Blender. It was suitable for both beginners and experienced users. The event was followed by a blender-render competition, which added to the excitement.</p>
-                </div>
-                <div className="border border-none  h-25 w-53 mt-10 ml-25"><h1 className="text-heading">Hours</h1>
-                <p className="text-body-text text-gray-600">Weekdays hour  <span className="text-sub-heading text-[#7848F4]
-                font-bold">7PM-10PM</span></p>
-                <p className="text-body-text text-gray-600">Sunday hour  <span className="text-sub-heading text-[#7848F4]
-                font-bold">7PM-10PM</span></p>
-                </div>
-                <div>
-                    <h1 className="text-heading mt-6 ml-25">Organizer Contact</h1>
-                    <p className="ml-25 mt-4 text-gray-600">Please go to <span className="text-[#7848F4]">www.sneakypeeks.com</span> and refer the FAQ section for more detail</p>
-                    </div>
-                </div>
-                <div className="flex-1 ml-25 ">
-                    <h1 className="mt-10 text-heading">Event Location</h1>
-                    <div className="border border-none w-70 h-70 mt-5">  <img src={map} alt="Event Location" className="w-full 
-                    h-full object-contain" /> 
-                    </div>
-                    <div className=" mt-6 border border-none w-100 h-30">
-                        <h1 className="text-2xl">Dream world wide in jakatar</h1> <br />
-                        <p className="text-body-text text-gray-600">Dummy location generation model by RSU ... Our approach generates more realistic dummy locations</p>
-                    </div>
-                    <div className="border border-none w-90 h-25">
-                        <h1 className="font-bold">Tags</h1>
-                        <h3 className=" text-sm border border-none h-6 w-90 mt-3">Indonesia event <span className="ml-3">Jaskaran event</span> <span className="ml-3">UI</span> <span className="ml-3">Jaksaran event</span></h3> 
-                        <h3 className=" text-sm border border-none h-6 w-90 mt-3">Seminar <span className="ml-3">
-                         Jaksaran event</span>
-                        </h3>   
-                    </div>
-                    <div className="border border-none mt-5 w-50 h-20">
-                        <h1 className="font-bold">Share with friends</h1>
-                        <div className="border border-none w-50 h-9 mt-3 flex items-center"> <span className=" bg-[#0572e6] rounded-md"><Facebook size={24} color="#FFFFFF" /></span> <span className="bg-[#1265bf] ml-5 rounded-md"><Linkedin size={24} color="#FFFFFF" /></span></div>
-                    </div>
-                </div>
-            </section>
-        </>
-    );
+        <div className="flex-1">
+          <h1 className="text-2xl font-semibold mt-6 lg:mt-10 mb-4">
+            Event Location
+          </h1>
+          <div className="mb-6">
+            <img src={map} alt="Event Location" className="w-1/2 h-auto ml-0 object-contain mx-auto" />
+          </div>
+          <div className="mb-6">
+            <h1 className="text-2xl mb-2">
+              Dream world wide in Jakartar
+            </h1>
+            <p className="text-gray-600">
+              Dummy location generation model by RSU … Our approach generates more realistic dummy locations.
+            </p>
+          </div>
+          <div className="mb-6">
+            <h1 className="font-semibold mb-2">
+              Tags
+            </h1>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-2 py-1 bg-gray-200 rounded-md text-sm">
+                Indonesia event
+              </span>
+              <span className="px-2 py-1 bg-gray-200 rounded-md text-sm">
+                Jaskaran event
+              </span>
+              <span className="px-2 py-1 bg-gray-200 rounded-md text-sm">
+                UI
+              </span>
+              <span className="px-2 py-1 bg-gray-200 rounded-md text-sm">
+                Jaksaran event
+              </span>
+              <span className="px-2 py-1 bg-gray-200 rounded-md text-sm">
+                Seminar
+              </span>
+            </div>
+          </div>
+
+          <div>
+            <h1 className="font-semibold mb-2">
+              Share with friends
+            </h1>
+            <div className="flex items-center gap-5">
+              <span className="bg-[#0572e6] p-1 rounded-md">
+                <Facebook size={24} color="#FFFFFF" />
+              </span>
+              <span className="bg-[#1265bf] p-1 rounded-md">
+                <Linkedin size={24} color="#FFFFFF" />
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
