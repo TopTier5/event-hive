@@ -1,11 +1,15 @@
-export default function CollegeCard({ image, name, location }) {
+import { imageBaseURL } from "../api/client";
+
+
+
+export default function CollegeCard({college}) {
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden relative group">
 
       <div className="relative h-80">
         <img
-          src={image}
-          alt={name}
+          src={`${imageBaseURL}/${college.image}`}
+          alt={college.name}
           className="w-full h-full object-cover"
         />
        
@@ -20,8 +24,8 @@ export default function CollegeCard({ image, name, location }) {
 
       
       <div className="p-4">
-        <h2 className="text-lg font-semibold text-black mb-10">{name}</h2>
-        <p className="text-sm text-gray-500">{location}</p>
+        <h2 className="text-lg font-semibold text-black mb-10">{college.name}</h2>
+        <p className="text-sm text-gray-500">{college.address}</p>
       </div>
 
      
