@@ -1,56 +1,57 @@
 import EventCard from "./EventCard";
 import viewevent from "./assets/images/viewevent.jpg";
+// import viewevent from "./assets/images/viewevent.jpg";
 
-const events = [
-  {
-    id: 1,
-    image: event1,
-    title:
-      "BestSeller Book Bootcamp - write, Market & Publish Your Book - Lucknow",
-    date: "Saturday, March 18, 3:30PM",
-    location: "ONLINE EVENT - Attend anywhere",
-  },
-  {
-    id: 2,
-    image: event1,
-    title:
-      "BestSeller Book Bootcamp - write, Market & Publish Your Book - Lucknow",
-    date: "Saturday, March 18, 3:30PM",
-    location: "ONLINE EVENT - Attend anywhere",
-  },
-  {
-    id: 3,
-    image: event1,
-    title:
-      "BestSeller Book Bootcamp - write, Market & Publish Your Book - Lucknow",
-    date: "Saturday, March 18, 3:30PM",
-    location: "ONLINE EVENT - Attend anywhere",
-  },
-  {
-    id: 4,
-    image: event1,
-    title:
-      "BestSeller Book Bootcamp - write, Market & Publish Your Book - Lucknow",
-    date: "Saturday, March 18, 3:30PM",
-    location: "ONLINE EVENT - Attend anywhere",
-  },
-  {
-    id: 5,
-    image: event1,
-    title:
-      "BestSeller Book Bootcamp - write, Market & Publish Your Book - Lucknow",
-    date: "Saturday, March 18, 3:30PM",
-    location: "ONLINE EVENT - Attend anywhere",
-  },
-  {
-    id: 6,
-    image: event1,
-    title:
-      "BestSeller Book Bootcamp - write, Market & Publish Your Book - Lucknow",
-    date: "Saturday, March 18, 3:30PM",
-    location: "ONLINE EVENT - Attend anywhere",
-  },
-];
+// const events = [
+//   {
+//     id: 1,
+//     image: event1,
+//     title:
+//       "BestSeller Book Bootcamp - write, Market & Publish Your Book - Lucknow",
+//     date: "Saturday, March 18, 3:30PM",
+//     location: "ONLINE EVENT - Attend anywhere",
+//   },
+//   {
+//     id: 2,
+//     image: event1,
+//     title:
+//       "BestSeller Book Bootcamp - write, Market & Publish Your Book - Lucknow",
+//     date: "Saturday, March 18, 3:30PM",
+//     location: "ONLINE EVENT - Attend anywhere",
+//   },
+//   {
+//     id: 3,
+//     image: event1,
+//     title:
+//       "BestSeller Book Bootcamp - write, Market & Publish Your Book - Lucknow",
+//     date: "Saturday, March 18, 3:30PM",
+//     location: "ONLINE EVENT - Attend anywhere",
+//   },
+//   {
+//     id: 4,
+//     image: event1,
+//     title:
+//       "BestSeller Book Bootcamp - write, Market & Publish Your Book - Lucknow",
+//     date: "Saturday, March 18, 3:30PM",
+//     location: "ONLINE EVENT - Attend anywhere",
+//   },
+//   {
+//     id: 5,
+//     image: event1,
+//     title:
+//       "BestSeller Book Bootcamp - write, Market & Publish Your Book - Lucknow",
+//     date: "Saturday, March 18, 3:30PM",
+//     location: "ONLINE EVENT - Attend anywhere",
+//   },
+//   {
+//     id: 6,
+//     image: event1,
+//     title:
+//       "BestSeller Book Bootcamp - write, Market & Publish Your Book - Lucknow",
+//     date: "Saturday, March 18, 3:30PM",
+//     location: "ONLINE EVENT - Attend anywhere",
+//   },
+// ];
 
 
 
