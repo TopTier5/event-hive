@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import useSWR from "swr";
 import { apiFetcher, apiClient } from "../api/client";
 import SubmitButton from "../components/SubmitButton";
-import { useNavigate } from "react-router";
+import { Navigate, useNavigate } from "react-router";
 
 
 export default function CreateEvent() {
@@ -21,6 +21,10 @@ export default function CreateEvent() {
         } catch (error) {
             console.log(error)
         }
+    }
+
+    if(localStorage.getItem("ACCESSTOKEN")){
+        return <Navigate to={"/login"}/>
     }
 
     return (
