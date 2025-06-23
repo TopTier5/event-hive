@@ -3,11 +3,45 @@ import map from "../assets/images/map.png"
 import { Facebook } from "lucide-react";
 import { Linkedin } from "lucide-react";
 import { Twitter } from "lucide-react";
+import { useSearchParams } from "react-router";
+import useSWR from "swr";
+import { apiFetcher, imageBaseURL } from "../api/client";
+import { useEffect } from "react";
 
 export default function EventDetail() {
+  const [searchParams] =useSearchParams()
+  const id = searchParams.get("id")  
+
+  const  {data, isLoading, error} = useSWR(`/events/${id}`, apiFetcher);
+
+  useEffect(() => {
+    scrollTo(0,0)
+  }, [id]);
+
+  if (isLoading ) {
+    return(
+      <div>
+        <p>loading event detail...</p>
+      </div>
+    );
+  }
+
+  if (error) {
+      return(
+        <div>
+          <p>something went wrong</p>
+        </div>
+      );
+      
+    }
+
+
+
+
   return (
     <>
-      <section className="bg-[url(./assets/images/viewevent.jpg)] bg-cover w-full relative p-10">
+      <section style={{ backgroundImage: `url(${imageBaseURL}/${data.data.image})` }} 
+      className=" bg-cover w-full relative p-10">
         {/* linear gradient */}
         <div className="absolute inset-0 bg-gradient-to-r from-[rgba(19,19,21,0.5)] to-[rgba(19,19,21,0.5)]" />
         <div className="relative z-10 max-w-7xl mx-auto p-4 flex flex-col lg:flex-row lg:justify-between lg:items-start">
@@ -17,13 +51,13 @@ export default function EventDetail() {
             </button>
             {/* page description */}
             <h1 className="text-4xl sm:text-5xl font-bold mt-20">
-              Dream world wide <br /> in Jakartra
+             {data.data.title}<br /> in {data.data.venue}
             </h1>
             <h2 className="mt-10 text-2xl sm:text-3xl font-semibold">
-              IIIT Sonepat
+              {data.data.college.name}
             </h2>
             <p className="mt-8 text-base sm:text-lg">
-              DesignHub organized a 3D Modeling Workshop using Blender on 16th February at 5 PM. The workshop taught participants the magic of creating stunning 3D models and animations using Blender. It was suitable for both beginners and experienced users. The event was followed by a blender-render competition, which added to the excitement.      </p>
+              {data.data.description}     </p>
             <h3 className="flex items-center mt-6">
               <MapPin className="mr-2" size={20} /> View map
             </h3>
@@ -34,7 +68,7 @@ export default function EventDetail() {
               Date & Time
             </h1>
             <p className="text-gray-600 mb-4">
-              Saturday, March 18 2023, 9.30PM
+             {data.data.start}
             </p>
             <p className="text-[#7848F4] mb-4">
               Add to calendar
@@ -58,8 +92,7 @@ export default function EventDetail() {
           </h1>
           <div className="mb-6">
             <p className="text-gray-600">
-              DesignHub organized a 3D Modeling Workshop using Blender on 16th February at 5 PM. The workshop taught participants the magic of creating stunning 3D models and animations using Blender. It was suitable for both beginners and experienced users. The event was followed by a blender-render competition, which added to the excitement.<br /><br />
-              DesignHub organized a 3D Modeling Workshop using Blender on 16th February at 5 PM. The workshop taught participants the magic of creating stunning 3D models and animations using Blender. It was suitable for both beginners and experienced users. The event was followed by a blender-render competition, which added to the excitement.
+             {data.data.description}
             </p>
           </div>
           <div className="mb-6">
@@ -92,7 +125,7 @@ export default function EventDetail() {
           </div>
           <div className="mb-6">
             <h1 className="text-2xl mb-2">
-              Dream world wide in Jakartar
+              {data.data.title} in {data.data.venue}
             </h1>
             <p className="text-gray-600">
               Dummy location generation model by RSU … Our approach generates more realistic dummy locations.
@@ -103,21 +136,15 @@ export default function EventDetail() {
               Tags
             </h1>
             <div className="flex flex-wrap gap-2">
-              <span className="px-2 py-1 bg-gray-200 rounded-md text-sm">
-                Indonesia event
+              {data.data.tags.map( (tag,index) => {
+                return (
+                   <span key={index} className="px-2 py-1 bg-gray-200 rounded-md text-sm">
+                {tag}
               </span>
-              <span className="px-2 py-1 bg-gray-200 rounded-md text-sm">
-                Jaskaran event
-              </span>
-              <span className="px-2 py-1 bg-gray-200 rounded-md text-sm">
-                UI
-              </span>
-              <span className="px-2 py-1 bg-gray-200 rounded-md text-sm">
-                Jaksaran event
-              </span>
-              <span className="px-2 py-1 bg-gray-200 rounded-md text-sm">
-                Seminar
-              </span>
+                );
+
+              })}
+
             </div>
           </div>
 
