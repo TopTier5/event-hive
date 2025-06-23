@@ -4,6 +4,7 @@ import { apiFetcher, apiClient } from "../api/client";
 import SubmitButton from "../components/SubmitButton";
 import { useNavigate } from "react-router";
 
+
 export default function CreateEvent() {
     const navigate = useNavigate();
     const { data, isLoading, error } = useSWR("/colleges", apiFetcher);
