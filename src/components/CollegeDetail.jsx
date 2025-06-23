@@ -6,7 +6,7 @@ const CollegeDetail = () => {
     <div className="bg-gray-100 min-h-screen flex flex-col items-center p-6">
       <div className="max-w-full w-full bg-white shadow-lg rounded-lg overflow-hidden">
         <img
-          src={sandra}
+          src={cdpic}
           alt="IIT Roorkee"
           className="w-full object-cover" />
         <div className="p-6">

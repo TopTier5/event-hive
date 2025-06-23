@@ -1,5 +1,5 @@
 import EventCard from "./EventCard";
-import viewevent from "./assets/images/viewevent.png";
+import viewevent from "./assets/images/viewevent.jpg";
 
 const events = [
   {
