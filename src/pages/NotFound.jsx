@@ -1,6 +1,7 @@
 import Footer from "../components/Footer.jsx";
 import { FaInstagram, FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
 import CollegeEvents from "../components/CollegeEvents.jsx";
+import notFoundImage from "../assets/images/notfound.png";
 
 export default function NotFound() {
     return (

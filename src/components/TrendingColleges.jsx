@@ -41,26 +41,6 @@ export default function TrendingColleges() {
             college={college}
           />
         )}
-
-
-
-        {/* <CollegeCard
-          image={harvard}
-          name="Harvard University"
-          location="Cambridge, Massachusetts, UK"
-        />
-
-        <CollegeCard
-          image={standford}
-          name="Stanford University"
-          location="Stanford, California"
-        />
-
-        <CollegeCard
-          image={nanyang}
-          name="Nanyang University"
-          location="Nanyang Ave, Singapura"
-        /> */}
       </div>
 
 
