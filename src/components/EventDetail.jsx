@@ -46,11 +46,9 @@ export default function EventDetail() {
         <div className="absolute inset-0 bg-gradient-to-r from-[rgba(19,19,21,0.5)] to-[rgba(19,19,21,0.5)]" />
         <div className="relative z-10 max-w-7xl mx-auto p-4 flex flex-col lg:flex-row lg:justify-between lg:items-start">
           <div className="text-white max-w-xl mb-10 lg:mb-0">
-             <Link to="/">
             <button className="bg-[#7848F4] text-white px-4 py-2 rounded-md mt-10 cursor-pointer">
               Back
             </button>
-            </Link>
             {/* page description */}
             <h1 className="text-4xl sm:text-5xl font-bold mt-20">
              {data.data.title}<br /> in {data.data.venue}
